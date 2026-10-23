@@ -1,0 +1,16 @@
+{
+    "name": "Lista",
+    "short_name": "miLista",
+    "start_url": ".",
+    "display": "standalone",
+    "description": "una nueva app pwa",
+    "icons":
+    [
+        {
+            "src": "icono2.png",
+            "sizes": "144x144",
+            "type": "image/png",
+            "purpose": "any"
+        }
+    ]
+}
