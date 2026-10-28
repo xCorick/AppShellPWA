@@ -1,17 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Listas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="Trivia UTS: juega trivias por materia, revisa tu progreso y administra el banco de preguntas.">
+    <meta name="theme-color" content="#0b3a28">
+    <title>Trivia UTS</title>
     <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="icon" href="icon-192.png" type="image/png">
+    <link rel="apple-touch-icon" href="icon-192.png">
     <link href="app.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        lista
-    </header>
-    <div id="lista"></div>
+    <div id="loader" class="loader" aria-hidden="true"></div>
+    <div class="appbar">
+        <header class="topbar">
+            <a class="brand" href="#/">TRIVIA UTS</a>
+            <div class="topbar-actions">
+                <button id="btn-install" class="btn-link" type="button" hidden>INSTALAR</button>
+                <div id="user-chip" class="user-chip" hidden></div>
+                <button id="btn-logout" class="btn-link" type="button" hidden>SALIR</button>
+            </div>
+        </header>
+        <nav id="tabs" class="tabs" aria-label="Secciones" hidden></nav>
+    </div>
+    <div id="net-banner" class="net-banner" role="status" hidden></div>
+    <main id="app" class="container">
+        <div class="boot"><span class="spinner" aria-hidden="true"></span> Cargando…</div>
+    </main>
+    <div id="toasts" class="toasts" aria-live="polite"></div>
+    <dialog id="dialog" class="dialog"></dialog>
+    <noscript><p class="container">Activa JavaScript para usar Trivia UTS.</p></noscript>
     <script src="app.js"></script>
 </body>
 </html>

@@ -1,16 +1,32 @@
 {
-    "name": "Lista",
-    "short_name": "miLista",
-    "start_url": ".",
+    "name": "Trivia UTS",
+    "short_name": "Trivia UTS",
+    "description": "Juega trivias por materia, revisa tu progreso y administra el banco de preguntas",
+    "lang": "es-MX",
+    "start_url": "./",
+    "scope": "./",
     "display": "standalone",
-    "description": "una nueva app pwa",
+    "background_color": "#072619",
+    "theme_color": "#0b3a28",
     "icons":
     [
         {
-            "src": "icono2.png",
-            "sizes": "144x144",
+            "src": "icon-192.png",
+            "sizes": "192x192",
             "type": "image/png",
             "purpose": "any"
+        },
+        {
+            "src": "icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
         }
     ]
 }
